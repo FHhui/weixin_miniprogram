@@ -1,0 +1,21 @@
+<view class="container">
+  <!-- 区域一：地址 -->
+  <view class="address_area">
+    <text>请输入您的地址：</text>
+    <input type='text' placeholder="地址" class='address'></input>
+  </view>
+  <!-- 区域二：学校 -->
+  <view class="university_area">
+    <text>请输入您所在的大学：</text>
+    <input type='text' placeholder="大学" class='university'></input>
+  </view>
+  <!-- 区域三：校区 -->
+  <view class="campus_area">
+    <text>请输入您所在的校区：</text>
+    <input type='text' placeholder="校区" class='university' class="campus"></input>
+  </view>
+  <!--区域四：提交 -->
+  <view>
+    <button class='save'>保存</button>
+  </view>
+</view>
