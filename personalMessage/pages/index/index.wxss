@@ -1,0 +1,63 @@
+/* pages/index/index.wxss */
+.container{
+  height:100vh;/*高100的视窗，这里写100%是无效的*/
+  flex-wrap: nonwarp;  /*换行*/
+  display:flex;/*flex布局方法 */
+  flex-direction: column;/*垂直布局*/
+  align-items: center;/*水平方向居中 */
+  justify-content: space-around;
+  background-color: rgba(50, 119, 199, 0.055);
+}
+.nav{
+    align-items: center;
+    background-color: rgba(50, 119, 199, 0.055);
+}
+.head_portrait{
+  width:150rpx; /*图片宽度  */
+  height: 150rpx;
+  margin: 0 auto;
+  align-items: center;
+}
+.nickname{
+  margin-bottom: 10rpx;
+  text-align: center;
+}
+
+.get_score{
+  width: 700rpx;
+  height: 30rpx;
+  align-items: left;/*水平方向居中 */
+}
+.address{
+  width: 700rpx;
+  height: 30rpx;
+  align-items: left;
+}
+.university{
+  width: 700rpx;
+  height: 30rpx;
+  align-items: left;
+}
+.campus{
+  width: 700rpx;
+  height: 30rpx;
+  align-items: left;
+}
+.comments_label{
+  width: 700rpx;
+  height: 30rpx;
+  align-items: left;
+}
+.text{
+  font-size: 100rpx;/*字体大小 */
+  color:black;
+  text-align:center;
+  border:1rpx solid burlywood;
+  justify-content: space-between;
+}
+.comments{
+  height: 500rpx;
+  width: 700rpx;
+  max-lines: 5;
+  border:1rpx solid rgb(44, 181, 185);
+}
