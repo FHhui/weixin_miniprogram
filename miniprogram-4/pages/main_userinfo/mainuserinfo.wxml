@@ -1,0 +1,37 @@
+<view class='container'>
+  <!-- 第一个区域：头像和昵称 -->
+  <view class='nav'>
+    <!-- 头像 -->
+    <image class="head_portrait" src='{{userInfo.avatarUrl}}'></image>
+    <!-- 昵称 -->
+    <view class='nickName'>
+      <text class='name'>{{userInfo.nickName}}</text> 
+    </view> 
+    
+  </view>
+  <!-- 第二个区域：信用评分 -->
+  <view class='get_score'>
+    <text>信用评分：</text>
+    <text>{{score}}</text> 
+  </view> 
+  <!-- 第三个区域：地址 -->
+  <view class='address'>
+    <text>地址：</text>
+    <text>{{address}}</text>
+  </view>
+  <!-- 第四个区域：我的大学 -->
+  <view class="university">
+    <text>大学：</text>
+    <text>{{university}}</text>
+  </view>
+  <!-- 第五个区域：校区 -->
+  <view class="campus">
+    <text>校区：</text>
+    <text>{{campus}}</text>
+  </view>
+  <!-- 第六个区域：评论 -->
+  <view class="comments_area">
+    <text class="comments_label">评论：</text>
+    <textarea placeholder="textarea" auto-focus='true' class='comments'></textarea>
+  </view>
+</view>

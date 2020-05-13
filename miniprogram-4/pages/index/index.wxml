@@ -1,0 +1,143 @@
+<!--index.wxml-->
+<scroll-view class="container" scroll-y bindscrolltolower="lower">
+  <view class='page_row'>
+    <view class='search' catchtap="suo">
+      <view class='df search_arr'>
+        <icon class='searchicon' size='20' type='search'></icon>
+        <input class="" disabled placeholder="请输入关键字" value='{{searchValue}}' />
+      </view>
+      <view class='sousuo'>搜索</view>
+    </view>
+  </view>
+  <view class='swiperBanner'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item wx:for="{{imgUrls}}" wx:key='{{index}}'>
+        <navigator url='{{item.link}}'>
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class='icon'>
+    <navigator hover-class="none" url="/pages/list/index?title=？？？？？？&id=5b8e37e34b640a63b33272dc">
+      <image src='/image/food.png' mode="aspectFit"></image>
+      <text>食品类</text>
+    </navigator>
+    <navigator hover-class="none" url="/pages/list/index?title=？？？？？？&id=5b8f45f2afb7c17788e11994">
+      <image src='/image/outfit.png' mode="aspectFit"></image>
+      <text>服饰类</text>
+    </navigator>
+    <navigator hover-class="none" url="/pages/list/index?title=？？？？？？&id=5b8f4603afb7c17788e11996">
+      <image src='/image/necessities.png' mode="aspectFit"></image>
+      <text>生活用品</text>
+    </navigator>
+    <navigator hover-class="none" url="/pages/list/index?title=？？？？？？&id=5b8f4612afb7c17788e11998">
+      <image src='/image/electronic.png' mode="aspectFit"></image>
+      <text>电子产品</text>
+    </navigator>
+  </view>
+  <view class='title'>
+    <text class='cn'>好物推荐</text>
+    <text class='en'>TopList</text>
+  </view>
+  <!-- <view class='title'>
+    <text class='cn'>主题</text>
+    <text class='en'>Theme</text>d5e7f5d5e7f5d5e7f5d5e7f5d5e7f5d5e7f5d5e7f5d5e7f5d5e7f5d5e7f5
+  </view> -->
+  <!-- <view class='img'>
+    <image src='/images/banner_2.png' mode="widthFix"></image>
+    <image src='/images/banner_3.png' mode="widthFix"></image>
+    <image src='/images/banner_4.png' mode="widthFix"></image>
+  </view> -->
+  
+  <view class='list'>
+    <!-- <view class='item' wx:for="{{list}}">
+      <navigator hover-class="none" url="/pages/details/index?id={{item._id}}">
+        <image class='product' src='{{item.img}}'></image>
+        <text class='text'>{{item.title}}.</text>
+      </navigator>
+      <view class='price'>
+        <text>￥{{item.price}}</text>
+        <view bindtap='addCart' data-item="{{item}}">
+          <image style='width:20px;height:20px;' src='/images/Shopping.png'></image>
+        </view>
+      </view>
+    </view> -->
+    <view class="list-moduler">
+      <navigator url="url" class="mod-item">
+        <view class="mod-signup">
+          <image src="{{signupimg}}"></image>
+        </view>
+        <view class="mod-img">
+          <image src="{{imgsrc}}" class="mod-image"></image>
+        </view>
+        <view class="mod-title">
+          <text>标题</text>
+        </view>
+        <view class="mod-info">
+          <view class="mod-icon">
+            <image src="{{iconsrc}}" class="icon_1"></image>
+          </view>
+          <view class="moinfont">>已卖出*件物品</view>
+        </view>
+      </navigator>
+
+      <navigator url="url" class="mod-item">
+        <view class="mod-signup">
+          <image src="{{signupimg}}"></image>
+        </view>
+        <view class="mod-img">
+          <image src="{{imgsrc}}" class="mod-image"></image>
+        </view>
+        <view class="mod-title">
+          <text>标题</text>
+        </view>
+        <view class="mod-info">
+          <view class="mod-icon">
+            <image src="{{iconsrc}}" class="icon_1"></image>
+          </view>
+          <view class="moinfont">>已卖出*件物品</view>
+        </view>
+      </navigator>
+
+      <navigator url="url" class="mod-item">
+        <view class="mod-signup">
+          <image src="{{signupimg}}"></image>
+        </view>
+        <view class="mod-img">
+          <image src="{{imgsrc}}" class="mod-image"></image>
+        </view>
+        <view class="mod-title">
+          <text>标题</text>
+        </view>
+        <view class="mod-info">
+          <view class="mod-icon">
+            <image src="{{iconsrc}}" class="icon_1"></image>
+          </view>
+          <view class="moinfont">>已卖出*件物品</view>
+        </view>
+      </navigator>
+
+      <navigator url="url" class="mod-item">
+        <view class="mod-signup">
+          <image src="{{signupimg}}"></image>
+        </view>
+        <view class="mod-img">
+          <image src="{{imgsrc}}" class="mod-image"></image>
+        </view>
+        <view class="mod-title">
+          <text>标题</text>
+        </view>
+        <view class="mod-info">
+          <view class="mod-icon">
+            <image src="{{iconsrc}}" class="icon_1"></image>
+          </view>
+          <view class="moinfont">>已卖出*件物品</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+    <!-- <button bindtap='imgsc'> 上传</button> -->
+</scroll-view>

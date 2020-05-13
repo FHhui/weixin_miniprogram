@@ -1,0 +1,55 @@
+<scroll-view class="container" scroll-y bindscrolltolower="lower">
+  <!--图片轮换播放-->
+  <view class='swiperBanner_1'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item wx:for="{{imgUrls}}" wx:key='{{index}}'>
+        <navigator url='{{item.link}}'>
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!--价格-->
+  <view class="info-price">
+    <view class="info-title">
+      <text>商品标题</text>
+    </view>
+    <view class="price">￥100</view>
+  </view>
+
+  <!--卖家信息摁钮-->
+  <view class="info-seller">
+    <view style="height:40px;line-height: 40px;border-bottom:2px solid #f5f5f5;">
+      <view style='float:left;margin-left:2px;'>
+        <image src="/image/signup.png" class="checkSeller_info"></image>
+      </view>
+      <view style='float:left;margin-left:2px;'>
+        <view class="su_name">
+          <text>×××</text>
+        </view>
+      </view>
+      <view style='float:right;font-size:12px;color:#A2A2A2;margin-right:10px'>
+        <navigator url="pjid={{sellers_id}}">查看卖家信息</navigator>
+      </view>
+      <view class="arrow"></view>
+    </view>
+  </view>
+
+  <!--商品描述-->
+  <view class='details_box'>
+    <view style='padding:10px 20px'>
+      <view class="wxParse">
+        <text>*******************</text>
+      </view>
+    </view>
+  </view>
+
+  <!--欲购买按钮-->
+  <view class="to_buy">
+  <view style='padding:8rpx 8rpx;'>
+    <button class="button-green" bindTap="immeBuy" form-type="submit">欲购买</button>
+  </view>
+  </view>
+  
+</scroll-view>

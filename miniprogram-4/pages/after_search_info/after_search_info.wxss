@@ -1,0 +1,157 @@
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #EFEFF4;
+  border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09BB07;
+  white-space: nowrap;
+}
+
+.clear{
+
+  clear: both;
+
+  overflow: hidden;
+
+}
+
+navigator{
+
+  display:inline;
+
+}
+
+.list{
+
+  margin-top:10px;
+
+}
+
+ 
+
+.list .list_item{
+
+  margin-top:10px;
+
+  padding:10px;
+
+  height:100px;
+
+  border-bottom:1px solid #E8E8E8;
+
+}
+
+.list .list_item .img{
+
+  float:left;
+
+  width:40%;
+
+  height:100%;
+
+}
+
+.list .list_item .img image{
+
+   width:100%;
+
+   height:100%;
+
+}
+
+ 
+
+.list .list_item .info{
+
+  width:59%;
+
+  float:right;
+
+  height:100px;
+
+  position:relative;
+
+}
+
+.list .list_item .info .title{
+
+  color:#333;
+
+  margin-left:10px;
+
+  font-size: 15px;
+
+}
+
+ 
+
+.list .list_item .info .price{
+
+  color:#FF2727;
+
+  margin-left:10px;
+
+  margin-top:10px;
+
+  font-size:15px;
+
+}
+
+ 
+
+.list .list_item .info .num{
+
+  position: absolute;
+
+  left:0px;
+
+  bottom:10px;
+
+  color:#747474;
+
+  margin-left:10px;
+
+  font-size:15px;
+
+}
