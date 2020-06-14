@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+ "window": {
+  "navigationBarBackgroundColor": "#3883FA",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "个人信息",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+},
+  "sitemapLocation": "sitemap.json"
+}
