@@ -1,0 +1,58 @@
+<scroll-view class="container" scoll-y scroll-y bindscrolltolower="lower">
+  <!--顶部搜索栏-->
+  <view class="search" catchtap="search">
+    <view class="df search_arr">
+      <icon class="searchicon" size="20" type="search"></icon>
+      <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}"></input>
+      <view class="sbutton" style="width:60px;font-size:12pt !important;" >搜索</view>
+    </view>
+  </view>
+
+  <!--轮播图-->
+  <view class="swiperBanner">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item wx:for="{{imgUrls}}" wx:key="imgUrls"><!--for循环图片-->
+        <navigator url='{{item.link}}'>
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"></image><!--这里的item指的是当前项，后面跟上目标项-->
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!--分类-->
+  <view class='icon'>
+    <navigator hover-class="none" url="">
+      <image src='/images/food.png' mode="aspectFit"></image>
+      <text>食品类</text>
+    </navigator>
+    <navigator hover-class="none" url="">
+      <image src='/images/outfit.png' mode="aspectFit"></image>
+      <text>配饰类</text>
+    </navigator>
+    <navigator hover-class="none" url="">
+      <image src='/images/necessities.png' mode="aspectFit"></image>
+      <text>生活用品类</text>
+    </navigator>
+    <navigator hover-class="none" url="">
+      <image src='/images/electronic.png' mode="aspectFit"></image>
+      <text>电子产品类</text>
+    </navigator>
+  </view>
+
+  <!--列表头-->
+  <view class='title'>
+    <text class='cn'>好物推荐</text>
+    <text class='en'>TopList</text>
+  </view>
+
+  <!--列表-->
+  <view class='list'>
+   <view wx:for="{{good_list}}">
+     <van-card 
+     image="{{item.image}}"
+     title="{{item.title}}"
+     price="{{item.price}}"
+     />
+   </view>   
+ </view>
+</scroll-view>

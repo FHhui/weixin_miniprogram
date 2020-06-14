@@ -1,0 +1,11 @@
+<view>
+  <input style='margin-top: 40rpx;' placeholder="请输入商品id" value="{{GoodID}}" bindinput="bindKeyInputGoodID" />
+  <button style='margin-top: 40rpx;' bindtap='toBuy'>购买</button>
+  
+  <input style='margin-top: 40rpx;' placeholder="请输入用户id" value="{{buyID}}" bindinput="bindKeyInputId" />
+
+  <button style='margin-top: 40rpx;' bindtap='queryData'>查询已购商品</button>
+  <text style='margin-top: 80rpx;'>
+     商品号：{{GoodIDs}}
+  </text>
+</view>
