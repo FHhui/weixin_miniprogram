@@ -1,0 +1,22 @@
+<view class="container">
+<view class="area1">
+  <view class="page-section">
+    <view class="page-section-title">请选择您对卖主的评分：</view>
+    <view class="input_score">
+      <radio-group bindchange="radioChange" >
+        <label class="score" wx:for="{{items}}" wx:key="{{item.value}}">
+          <view class="score2">
+            <radio value="{{item.value}}" checked="true"/>
+          </view>
+          <view class="weui-cell__bd">{{item.name}}</view>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view>
+
+<!-- 评论 -->
+<text class='txt2'>请输入您对卖主的评价：</text>
+<textarea class='comment'></textarea>
+<button class="btn">提交</button>
+</view>

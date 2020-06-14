@@ -1,0 +1,28 @@
+/* pages/index/index.wxss */
+.area1{
+  height: 600rpx;
+}
+.comment{
+  height: 300rpx;
+  width: 700rpx;
+  max-lines: 5;
+  border:1rpx solid rgb(44, 181, 185);
+  align-items:left;
+}
+.input_score{
+  display: flex;
+  flex-direction: row;/*水平布局*/
+  width: 100%;
+  height: 60rpx;
+  margin: 20rpx;
+  justify-content: left
+}
+.score{
+  display: flex;
+  flex-direction: row;/*水平布局*/
+}
+.btn{
+  width: 20;
+  background-color: rgba(0, 128, 0, 0.568)
+}
+

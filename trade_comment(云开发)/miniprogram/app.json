@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index" 
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#3883FA",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "交易评论",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
