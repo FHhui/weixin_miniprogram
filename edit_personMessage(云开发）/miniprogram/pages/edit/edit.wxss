@@ -1,0 +1,53 @@
+/* pages/edit/edit.wxss */
+.container{
+  height:100vh;/*高100的视窗，这里写100%是无效的*/
+  flex-wrap: nonwarp;  /*换行*/
+  display:flex;/*flex布局方法 */
+  flex-direction: column;/*垂直布局*/
+  align-items: center;/*水平方向居中 */
+  justify-content: space-around;
+  background-color: rgba(50, 119, 199, 0.055);
+}
+.address_area{
+  width: 700rpx;
+  height: 30rpx;
+  display:flex;/*flex布局方法*/
+  flex-direction: column;/*水平布局*/
+  align-items: left;
+  margin-bottom: 20rpx;
+}
+.address{
+  width: 700;
+  height: 100;
+  border:5rpx solid rgba(48, 194, 231, 0.541);
+}
+
+.university_area{
+  width: 700rpx;
+  height: 30rpx;
+  display:flex;/*flex布局方法*/
+  flex-direction: column;/*水平布局*/
+  align-items: left;
+  margin-bottom: 20rpx;
+}
+.university{
+  width: 700;
+  height: 100;
+  border:5rpx solid rgba(48, 194, 231, 0.541);
+}
+.campus_area{
+  width: 700rpx;
+  height: 30rpx;
+  display:flex;/*flex布局方法*/
+  flex-direction: column;/*水平布局*/
+  align-items: left;
+  margin-bottom: 20rpx;
+}
+.campus{
+  width: 700;
+  height: 100;
+  border:5rpx solid rgba(48, 194, 231, 0.541);
+}
+.save{
+  background-color: rgba(0, 128, 0, 0.568)
+}
