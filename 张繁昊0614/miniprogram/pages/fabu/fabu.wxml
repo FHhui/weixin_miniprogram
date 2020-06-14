@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">物品信息
+  <view class="picture">
+  <input type="image" placeholder="请上传物品图片"></input>
+  </view>
+
+  <view class="introduce">
+  <input type="text" placeholder="请填写物品介绍"></input>
+  </view>
+
+  <view class="contact_way">
+  <image src="/images/contact.jpg"></image>
+  <input type="text" placeholder="请填写联系方式"></input>
+  </view>
+
+  <view class="price">
+  <image src="/images/rmb.jpg"></image>
+  <input type="text" placeholder="请填写物品价格"></input>
+  </view>
+
+  <view class="submit">
+  <button type="warn" loading="true">提交</button>
+  </view>
+</view>

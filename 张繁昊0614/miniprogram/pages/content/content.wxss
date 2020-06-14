@@ -1,0 +1,76 @@
+
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #777777;  
+    text-align: center;  
+    line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 33.33%;  
+    color: #777777;  
+}  
+.on{ color: #da7c0c;  
+    border-bottom: 5rpx solid #da7c0c;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{  
+  
+    text-align: center;  
+}  
+ 
+.tab-item{
+  display:inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 15px;
+  text-align: center;
+  width: 22%;
+}
+ 
+.full-image{
+  width:80px;
+  height:80px;
+  margin:13px;
+  border-radius: 50px;
+}
+.page-xx{
+  display:flex;
+  flex-direction:row;
+}
+.xx-text-name{
+  text-align: center;
+  margin: 10px;
+  width: 65%;
+}
+.text-name{
+  font-size:30px;
+  color:rgb(51, 20, 20);
+}
+.page_card{
+  background:rgba(160, 160, 160, 0.295);
+  margin: 8px;
+  border-radius: 7px;
+}
+ 
+.jian-text
+{
+ font-size:16px;
+ text-align: left;
+}
+ 
+.btn{
+  display: flex;
+ justify-content: center;
+}
+.btn-wx{
+  display: flex;
+  align-items: center;
+  font-size:14px;
+  background-color:#4a66c2;
+}
+.btn-call{
+  display: flex;
+  align-items: center;
+  font-size:14px;
+  background-color:#e67c61;
+}

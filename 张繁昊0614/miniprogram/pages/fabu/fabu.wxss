@@ -1,0 +1,47 @@
+/* pages/fabu/fabu.wxss *//**index.wxss**/
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.picture{
+  width: 600rpx;
+  height: 200rpx;
+  background-color:  ghostwhite;
+  border:1rpx solid burlywood;
+}
+.introduce {
+  width: 600rpx;
+  height: 200rpx;
+  background-color: beige;
+  border:1rpx solid burlywood;
+}
+.contact_way {
+  display:  flex;
+  width: 550rpx;
+  height: 80rpx;
+  border:1rpx solid burlywood;
+  align-items: center;
+  justify-content: space-around;
+}
+.price {
+  display:  flex;
+  width: 550rpx;
+  height: 80rpx;
+  border:1rpx solid burlywood;
+  align-items: center;
+  justify-content: space-around;
+}
+.submit{
+  background-color:  darkorange;
+  width: 300rpx;
+}
+image{
+  height: 70rpx;
+  width: 70rpx;
+}
+
+

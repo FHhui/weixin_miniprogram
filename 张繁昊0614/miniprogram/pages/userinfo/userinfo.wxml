@@ -1,0 +1,30 @@
+<view class="container" >
+
+
+  <!----昵称区域------>
+  <view class="nick_area">
+    <view>
+    <button   open-type='getUserInfo' class="image_btu" bindgetuserinfo='getMyInfo'>
+      <image src='{{src}}' class='nickname_ico'></image>
+    </button>
+    </view>
+    <view>
+    <text class="nick_text">{{nickname}}</text>
+  </view>
+  </view>
+
+  <view class="but_area">
+    <!------个人信息------->
+    <view class='user_info'>
+      <button class="button">个人信息</button>
+    </view>
+    <!------已发布的商品-------->
+    <view class="user_goods">
+      <button class="button">已发布的商品</button>
+    </view>
+    <!-------发布新商品------------>
+    <view class="new_user_goods">
+      <button class="button">发布新商品</button>
+    </view>
+  </view>
+</view>
